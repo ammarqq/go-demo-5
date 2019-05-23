@@ -1,0 +1,4 @@
+k apply -f build.yml --record
+
+helm init --service-account build \
+--tiller-namespace go-demo-5-build
