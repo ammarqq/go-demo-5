@@ -61,9 +61,9 @@ pipeline {
         container("docker") {
           k8sPushImage(image, false)
         }
-        container("helm") {
-          k8sPushHelm(project, "", cmAddr, true, true)
-        }
+        // container("helm") {
+        //   k8sPushHelm(project, "", cmAddr, true, true)
+        // }
       }
     }
   }
