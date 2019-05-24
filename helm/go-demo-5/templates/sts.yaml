@@ -26,7 +26,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
       - name: db
-        image: "mongo:{{ .Values.image.dbTag }}"
+        image: "mongo:{{ .Values.image.dbTag }}" 
         command:
           - mongod
           - "--replSet"
